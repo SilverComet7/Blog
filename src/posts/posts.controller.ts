@@ -21,9 +21,6 @@ export class PostsController {
     @Post()
     @ApiOperation({ summary: '创建帖子' })
     creat(@Body() body: CreatePostDto, @Query() query, @Param() params) {
-        console.log(body, query,
-            params);
-
         return body
     }
 
